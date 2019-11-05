@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".New"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="O que comprar?..."
+        android:textSize="26sp"
+        android:gravity="center"
+        android:background="#E27217"
+        android:textColor="#fff"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/NomeID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Nome do item">
+
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quantidade:"
+        android:textSize="21sp"
+        android:gravity="center_horizontal">
+
+    </TextView>
+
+    <NumberPicker
+        android:id="@+id/QuantidadeID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center_horizontal">
+
+
+    </NumberPicker>
+
+
+    <SeekBar
+        android:id="@+id/PrioridadeID"
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:progressBackgroundTint="#000000"
+        android:progressTint="#D8571B"
+        android:layout_gravity="center"
+        android:max="2">
+
+    </SeekBar>
+
+    <TextView
+        android:id="@+id/TxtSeekID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pouco importante"
+        android:gravity="center"
+        android:textSize="15sp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/AddBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adicionar"
+        android:layout_margin="20dp">
+
+    </Button>
+
+</LinearLayout>
